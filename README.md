@@ -1,7 +1,7 @@
 "# Playwright_Project"
 
 ###
-Site :  ecommerce-playground lambdatest
+Site ::  ecommerce-playground lambdatest
 ###
-link:: https://ecommerce-playground.lambdatest.io/
+link :: https://ecommerce-playground.lambdatest.io/
 ###
