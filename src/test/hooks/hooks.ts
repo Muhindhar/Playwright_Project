@@ -1,7 +1,8 @@
 import { Before,After,BeforeAll,AfterAll, setDefaultTimeout, Status } from "@cucumber/cucumber";
 import { Browser,chromium } from "playwright/test";
-import { logger } from "../../utilities/logger";
+import { logger } from "../../utilities/logger"
 import { muhiworld } from "../world/world";
+import { LoginPage } from "../page/loginpage";
 
 setDefaultTimeout(90*1000)
 
@@ -16,6 +17,7 @@ Before(async function(this:muhiworld){
     this.browser = browser;
     this.context = await this.browser.newContext()
     this.page = await this.context.newPage();
+    this.login = new LoginPage(this.page)
 });
 
 After(async function(this:muhiworld,scenario){

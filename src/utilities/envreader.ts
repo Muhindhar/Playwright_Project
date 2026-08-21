@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import path from "path";
 
-const envPath = path.resolve(__dirname, "/env/url.env");
+const envPath = path.resolve(__dirname, "../../env/url.env");
 
 const result = dotenv.config({
     path: envPath,
